@@ -205,3 +205,12 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# cursor配置文件夹
+.starFactory
+
+# 输出文件夹
+backend/output
+# 测试文件夹
+backend/test_scripts
