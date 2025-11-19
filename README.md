@@ -4,3 +4,11 @@
 2. 数据清洗
 3. 知识构建 
 4. 知识检索
+
+
+## 后端
+### 后端代码架构
+满足FastAPI的三层架构
+- repositories
+- services
+- routers
