@@ -1,0 +1,41 @@
+[project]
+name = "data2knowledge-backend"
+version = "0.1.0"
+description = "Backend service for data2knowledge project"
+readme = "../README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "loguru==0.7.3",
+    "openai==2.1.0",
+    "python-dotenv==1.0.0",
+    "pyyaml==6.0.2",
+    "requests==2.32.5",
+    "tiktoken==0.12.0",
+    "pydantic>=2.10.0",
+    "beautifulsoup4==4.14.2",
+    "json_repair==0.52.3",
+    "fastapi==0.120.1",
+    "uvicorn==0.38.0",
+    "python-multipart==0.0.20",
+    "crawl4ai==0.7.7",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+only-include = [
+    "*.py",
+    "config/**/*.py",
+    "core/**/*.py",
+    "repositories/**/*.py",
+    "routers/**/*.py",
+    "schema/**/*.py",
+    "services/**/*.py",
+    "tools/**/*.py",
+]
+
+[tool.uv]
+dev-dependencies = []
+

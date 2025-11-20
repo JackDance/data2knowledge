@@ -12,3 +12,14 @@
 - repositories
 - services
 - routers
+
+### 环境管理
+本项目使用 [uv](https://github.com/astral-sh/uv) 来管理 Python 环境和依赖。
+
+**快速开始：**
+```bash
+cd backend
+uv sync  # 创建虚拟环境并安装所有依赖
+```
+
+详细使用说明请参考 [backend/UV_SETUP.md](docs/UV_SETUP.md)
